@@ -1,0 +1,28 @@
+GET http://localhost:5000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsIm5hbWUiOiJ3YXlhbiBZb2dhIiwiZW1haWwiOiJhZG1pbkBhZG1pbi5jb20iLCJpYXQiOjE2NjAxMjA4MTcsImV4cCI6MTY2MDEyMDgzN30.jp1npeA6kolip5S_iRViFWeZI0gjKP9F9taug58sPEM
+
+###
+POST http://localhost:5000/register
+Content-Type: application/json
+
+{
+    "name": "way",
+    "email": "way@admin.com",
+    "password": "123456",
+    "confpassword": "123456"
+}
+
+###
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email": "admin@admin.com",
+    "password": "123456"
+}
+
+###
+GET http://localhost:5000/token
+
+###
+DELETE http://localhost:5000/logout
